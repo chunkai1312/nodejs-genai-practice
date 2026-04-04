@@ -1,0 +1,21 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Chun-Kai Wang <chunkai1312@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@tsconfig/node-lts": "^24.0.0",
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
