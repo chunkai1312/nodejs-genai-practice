@@ -15,7 +15,25 @@ export async function researcherNode(state: typeof AgentState.State) {
     },
   });
   const tools = await client.getTools();
-  
+
+  // Patch MCP tool schemas for OpenAI strict function-calling: some tools
+  // (e.g. Tavily's `time_range`) expose properties without a `type`, and
+  // strict mode requires `required` to list every property key.
+  const patchSchema = (node: any): void => {
+    if (!node || typeof node !== 'object') return;
+    if (node.properties) {
+      for (const prop of Object.values<any>(node.properties)) {
+        if (!prop.type && !prop.anyOf && !prop.oneOf && !prop.allOf && !prop.$ref) {
+          prop.type = 'string';
+        }
+        patchSchema(prop);
+      }
+      node.required = Object.keys(node.properties);
+    }
+    if (node.items) patchSchema(node.items);
+  };
+  tools.forEach((t) => patchSchema((t as any).schema));
+
   const agent = createAgent({
     model: 'gpt-4o-mini',
     tools,

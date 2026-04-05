@@ -1,4 +1,4 @@
-import { StateGraph, MemorySaver, START, END } from '@langchain/langgraph';
+import { StateGraph, START, END, MemorySaver } from '@langchain/langgraph';
 import { AgentState } from './state.js';
 import { researcherNode } from './nodes/researcher.js';
 import { sourceReviewNode } from './nodes/source-review.js';
@@ -21,7 +21,7 @@ const builder = new StateGraph(AgentState)
   .addEdge('editor', 'article_revision')
   .addEdge('article_revision', END);
 
-export const graph = builder.compile({
+export const graph: any = builder.compile({
   checkpointer: new MemorySaver(),
 });
 

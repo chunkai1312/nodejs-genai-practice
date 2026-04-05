@@ -1,8 +1,8 @@
 import { createAgent } from 'langchain';
 import z from 'zod';
-import { StateAnnotation } from '../state.js';
+import { AgentState } from '../state.js';
 
-export async function seoNode(state: typeof StateAnnotation.State) {
+export async function seoNode(state: typeof AgentState.State) {
   const { topic, background } = state;
 
   const agent = createAgent({
