@@ -39,8 +39,8 @@ OpenAI API × LangChain × LangGraph × RAG<br>
 - **PART 1 OpenAI API 基礎應用**：瞭解 LLM 核心概念，掌握 OpenAI API 使用模式、提示工程與函式呼叫。
 - **PART 2 LangChain 核心應用**：掌握 LangChain 提示模板、結構化輸出、LCEL 流程鏈與工具代理整合。
 - **PART 3 RAG 實戰應用**：實作文件載入與分割，整合嵌入模型與向量資料庫建構 RAG 問答系統。
-- **PART 4 LangGraph AI Agent 實作**：建構具備多代理協作、人機互動、記憶管理與 MCP 整合能力的AI Agent。
-- **PART 5 本地LLM部署與安全設計**：整合 Ollama 與 LiteLLM 建構雲地混合模型架構，並涵蓋資安防護策略。
+- **PART 4 LangGraph AI Agent 實作**：建構具備多代理協作、人機互動、記憶管理與 MCP 整合能力的 AI Agent。
+- **PART 5 本地 LLM 部署與安全設計**：整合 Ollama 與 LiteLLM 建構雲地混合模型架構，並涵蓋資安防護策略。
 
 ### 目標讀者
 
