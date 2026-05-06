@@ -7,6 +7,8 @@
 * **購書實體書：**
 [天瓏網路書店](https://www.tenlong.com.tw/products/9786264144964) |
 [博客來網路書店](https://www.books.com.tw/products/0011050992) |
+[誠品書店](https://www.eslite.com/product/10012011762683136367001) |
+[蝦皮購物](https://shopee.tw/product/728783014/50609298428/) | 
 [momo購物網](https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=15183770)
 
 ## 書籍簡介
